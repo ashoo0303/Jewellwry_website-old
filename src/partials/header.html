@@ -1,0 +1,57 @@
+<div class="bg-ink-950 text-xs text-ink-200">
+  <div class="container-x flex items-center justify-between gap-4 py-2">
+    <p class="mx-auto flex items-center gap-2 sm:mx-0">
+      {{icon:truck size-4 text-gold-400}}
+      <span>Complimentary insured delivery on orders above Rs. 50,000</span>
+    </p>
+    <p class="hidden items-center gap-4 sm:flex">
+      <a href="tel:+923001234567" class="flex items-center gap-1.5 hover:text-gold-300">{{icon:phone size-3.5}} +92 303 4427651</a>
+      <span class="h-3 w-px bg-ink-700" aria-hidden="true"></span>
+      <a href="contact.html" class="hover:text-gold-300">Book a private viewing</a>
+    </p>
+  </div>
+</div>
+
+<header id="site-header" class="sticky top-0 z-50 border-b border-ink-100 bg-ivory/90 backdrop-blur-md transition-shadow">
+  <nav class="container-x flex h-16 items-center justify-between gap-4 lg:h-20" aria-label="Primary">
+    <a href="index.html" class="flex items-center gap-2.5" aria-label="Aurelia Jewels home">
+      <span class="grid size-10 place-items-center rounded-full bg-ink-950 text-gold-400">{{icon:gem size-5}}</span>
+      <span class="font-serif text-xl font-semibold tracking-wide text-ink-900">Aurelia<span class="text-gold-600"> Jewels</span></span>
+    </a>
+
+    <ul class="hidden items-center gap-8 lg:flex">
+      <li><a href="index.html" class="nav-link {{a:home}}" {{c:home}}>Home</a></li>
+      <li><a href="index.html#collections" class="nav-link">Collections</a></li>
+      <li><a href="about.html" class="nav-link {{a:about}}" {{c:about}}>About</a></li>
+      <li><a href="contact.html" class="nav-link {{a:contact}}" {{c:contact}}>Contact</a></li>
+    </ul>
+
+    <div class="flex items-center gap-2 sm:gap-3">
+      <a href="signin.html" class="nav-link {{a:signin}} hidden lg:inline-block" {{c:signin}}>Sign In</a>
+      <a href="signup.html" class="btn btn-gold hidden !px-5 !py-2.5 lg:inline-flex {{a:signup}}" {{c:signup}}>Sign Up</a>
+
+      <button type="button" id="cart-open" class="relative grid size-11 place-items-center rounded-full border border-ink-200 bg-white text-ink-800 transition hover:border-gold-500 hover:text-gold-700" aria-label="Open shopping bag">
+        {{icon:bag size-5}}
+        <span id="cart-count" class="absolute -right-1 -top-1 grid min-w-5 place-items-center rounded-full bg-gold-700 px-1 text-[11px] font-bold leading-5 text-white" hidden>0</span>
+      </button>
+
+      <button type="button" id="menu-toggle" class="grid size-11 place-items-center rounded-full border border-ink-200 bg-white text-ink-800 lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        <span class="menu-open">{{icon:menu size-5}}</span>
+        <span class="menu-close hidden">{{icon:x size-5}}</span>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="hidden border-t border-ink-100 bg-ivory lg:hidden">
+    <ul class="container-x space-y-1 py-4">
+      <li><a href="index.html" class="mobile-link {{a:home}}" {{c:home}}>Home</a></li>
+      <li><a href="index.html#collections" class="mobile-link">Collections</a></li>
+      <li><a href="about.html" class="mobile-link {{a:about}}" {{c:about}}>About</a></li>
+      <li><a href="contact.html" class="mobile-link {{a:contact}}" {{c:contact}}>Contact</a></li>
+      <li class="grid grid-cols-2 gap-3 pt-3">
+        <a href="signin.html" class="btn btn-outline" {{c:signin}}>Sign In</a>
+        <a href="signup.html" class="btn btn-gold" {{c:signup}}>Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</header>

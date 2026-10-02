@@ -1,0 +1,19 @@
+{
+  "name": "aurelia-jewels",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aurelia Jewels - a five-page responsive jewellery website built with HTML5 and Tailwind CSS.",
+  "type": "module",
+  "scripts": {
+    "build:pages": "node scripts/build-pages.mjs",
+    "build:css": "tailwindcss -i assets/css/input.css -o assets/css/styles.css --minify",
+    "build": "npm run build:pages && npm run build:css",
+    "watch:css": "tailwindcss -i assets/css/input.css -o assets/css/styles.css --watch",
+    "serve": "npx --yes serve . -l 3000"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}

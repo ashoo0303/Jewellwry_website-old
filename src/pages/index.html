@@ -1,0 +1,408 @@
+<!-- title: Aurelia Jewels | Handcrafted Gold, Diamond & Pearl Jewellery -->
+<!-- description: Shop handcrafted gold, diamond and pearl jewellery from Aurelia Jewels. Discover engagement rings, necklaces, earrings and bracelets with hallmarked gold and insured delivery. -->
+<!-- active: home -->
+<main id="main">
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-ink-950" aria-labelledby="hero-title">
+    <div class="pointer-events-none absolute -left-40 top-0 size-[32rem] rounded-full bg-gold-500/20 blur-3xl" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -bottom-40 right-0 size-[28rem] rounded-full bg-gold-700/20 blur-3xl" aria-hidden="true"></div>
+
+    <div class="container-x relative grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2 lg:gap-8 lg:py-24">
+      <div class="reveal">
+        <span class="badge border border-gold-400/40 bg-gold-400/10 text-gold-300">{{icon:sparkles size-3.5}} New season collection</span>
+        <h1 id="hero-title" class="mt-6 text-4xl leading-[1.1] !text-white sm:text-5xl lg:text-6xl">
+          Jewellery that tells <span class="italic text-gold-300">your story</span>
+        </h1>
+        <p class="mt-6 max-w-xl text-base leading-relaxed text-ink-300 sm:text-lg">
+          Hallmarked gold, certified diamonds and lustrous pearls &mdash; handcrafted by master artisans and delivered to your door, fully insured.
+        </p>
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+          <a href="#bestsellers" class="btn btn-gold">Shop bestsellers {{icon:arrow-right size-4}}</a>
+          <a href="contact.html" class="btn btn-outline-light">Book a private viewing</a>
+        </div>
+        <dl class="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-white/10 pt-8">
+          <div>
+            <dt class="text-xs uppercase tracking-wider text-ink-400">Designs</dt>
+            <dd class="mt-1 font-serif text-2xl text-white">1,200+</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-wider text-ink-400">Happy clients</dt>
+            <dd class="mt-1 font-serif text-2xl text-white">48k</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-wider text-ink-400">Heritage</dt>
+            <dd class="mt-1 font-serif text-2xl text-white">17 yrs</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="reveal relative mx-auto w-full max-w-lg lg:max-w-none">
+        <div class="relative overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl">
+          <img src="assets/images/hero-necklace.jpg" alt="Hallmarked yellow gold lattice necklace with matching drop earrings on a black display" class="aspect-[4/5] w-full object-cover" width="1200" height="1500" fetchpriority="high">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/50 via-transparent to-transparent"></div>
+        </div>
+        <div class="absolute -bottom-5 left-4 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-soft sm:-left-6">
+          <span class="grid size-10 place-items-center rounded-full bg-gold-50 text-gold-600">{{icon:check-badge size-6}}</span>
+          <div>
+            <p class="text-sm font-semibold text-ink-900">22K hallmarked</p>
+            <p class="text-xs text-ink-500">Certificate with every piece</p>
+          </div>
+        </div>
+        <div class="absolute -top-4 right-4 rounded-2xl bg-white px-4 py-3 shadow-soft sm:-right-4">
+          <div class="flex items-center gap-0.5 text-gold-500" aria-hidden="true">{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}</div>
+          <p class="mt-1 text-sm font-semibold text-ink-900">4.9 / 5 rating</p>
+          <p class="text-xs text-ink-500">2,300+ verified reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="border-b border-ink-100 bg-sand" aria-label="Our promises">
+    <ul class="container-x grid gap-6 py-8 sm:grid-cols-2 lg:grid-cols-4">
+      <li class="flex items-center gap-4">
+        <span class="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gold-600 shadow-sm">{{icon:check-badge size-6}}</span>
+        <div><p class="font-semibold text-ink-900">Certified diamonds</p><p class="text-sm text-ink-500">Graded and laser-inscribed</p></div>
+      </li>
+      <li class="flex items-center gap-4">
+        <span class="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gold-600 shadow-sm">{{icon:shield size-6}}</span>
+        <div><p class="font-semibold text-ink-900">Hallmarked gold</p><p class="text-sm text-ink-500">Purity you can verify</p></div>
+      </li>
+      <li class="flex items-center gap-4">
+        <span class="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gold-600 shadow-sm">{{icon:truck size-6}}</span>
+        <div><p class="font-semibold text-ink-900">Insured delivery</p><p class="text-sm text-ink-500">Free above Rs. 50,000</p></div>
+      </li>
+      <li class="flex items-center gap-4">
+        <span class="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gold-600 shadow-sm">{{icon:refresh size-6}}</span>
+        <div><p class="font-semibold text-ink-900">30-day returns</p><p class="text-sm text-ink-500">Easy, no-questions exchange</p></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Collections -->
+  <section id="collections" class="section" aria-labelledby="collections-title">
+    <div class="container-x">
+      <div class="reveal mx-auto max-w-2xl text-center">
+        <p class="eyebrow">Shop by category</p>
+        <h2 id="collections-title" class="section-title mt-3">Find the piece that feels like you</h2>
+        <p class="section-lead">From everyday elegance to once-in-a-lifetime statements, explore our four signature collections.</p>
+      </div>
+
+      <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <a href="#bestsellers" data-filter-link="rings" class="reveal group relative block aspect-[3/4] overflow-hidden rounded-3xl bg-ink-900">
+          <img src="assets/images/ring-hand.jpg" alt="Hand holding a diamond ring" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/10 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 flex items-end justify-between p-6">
+            <div><h3 class="!text-white text-2xl">Rings</h3><p class="mt-1 text-sm text-ink-200">Engagement &amp; everyday</p></div>
+            <span class="grid size-10 place-items-center rounded-full bg-white/15 text-white backdrop-blur transition group-hover:bg-gold-500">{{icon:arrow-right size-4}}</span>
+          </div>
+        </a>
+        <a href="#bestsellers" data-filter-link="necklaces" class="reveal group relative block aspect-[3/4] overflow-hidden rounded-3xl bg-ink-900">
+          <img src="assets/images/necklaces-display.jpg" alt="Display of ornate gold necklaces with matching earrings" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/10 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 flex items-end justify-between p-6">
+            <div><h3 class="!text-white text-2xl">Necklaces</h3><p class="mt-1 text-sm text-ink-200">Bridal &amp; statement sets</p></div>
+            <span class="grid size-10 place-items-center rounded-full bg-white/15 text-white backdrop-blur transition group-hover:bg-gold-500">{{icon:arrow-right size-4}}</span>
+          </div>
+        </a>
+        <a href="#bestsellers" data-filter-link="earrings" class="reveal group relative block aspect-[3/4] overflow-hidden rounded-3xl bg-ink-900">
+          <img src="assets/images/earrings-woman-pearl.jpg" alt="Woman wearing pearl earrings" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/10 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 flex items-end justify-between p-6">
+            <div><h3 class="!text-white text-2xl">Earrings</h3><p class="mt-1 text-sm text-ink-200">Pearls, studs &amp; drops</p></div>
+            <span class="grid size-10 place-items-center rounded-full bg-white/15 text-white backdrop-blur transition group-hover:bg-gold-500">{{icon:arrow-right size-4}}</span>
+          </div>
+        </a>
+        <a href="#bestsellers" data-filter-link="bracelets" class="reveal group relative block aspect-[3/4] overflow-hidden rounded-3xl bg-ink-900">
+          <img src="assets/images/bangles-red-stone.jpg" alt="Gold bangles set with red stones" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/10 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 flex items-end justify-between p-6">
+            <div><h3 class="!text-white text-2xl">Bracelets</h3><p class="mt-1 text-sm text-ink-200">Bangles &amp; chains</p></div>
+            <span class="grid size-10 place-items-center rounded-full bg-white/15 text-white backdrop-blur transition group-hover:bg-gold-500">{{icon:arrow-right size-4}}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bestsellers -->
+  <section id="bestsellers" class="section bg-white" aria-labelledby="bestsellers-title">
+    <div class="container-x">
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div class="reveal max-w-xl">
+          <p class="eyebrow">Customer favourites</p>
+          <h2 id="bestsellers-title" class="section-title mt-3">This season&rsquo;s bestsellers</h2>
+        </div>
+        <div class="reveal flex flex-wrap gap-2" role="tablist" aria-label="Filter products by category" id="product-tabs">
+          <button type="button" role="tab" class="tab-btn" aria-selected="true" data-filter="all">All</button>
+          <button type="button" role="tab" class="tab-btn" aria-selected="false" data-filter="rings">Rings</button>
+          <button type="button" role="tab" class="tab-btn" aria-selected="false" data-filter="necklaces">Necklaces</button>
+          <button type="button" role="tab" class="tab-btn" aria-selected="false" data-filter="earrings">Earrings</button>
+          <button type="button" role="tab" class="tab-btn" aria-selected="false" data-filter="bracelets">Bracelets</button>
+        </div>
+      </div>
+
+      <div id="product-grid" class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+        <article class="product-card card group overflow-hidden" data-category="rings">
+          <div class="relative aspect-[4/5] overflow-hidden bg-sand">
+            <img src="assets/images/ring-teal.jpg" alt="Aurora solitaire ring with a round brilliant diamond" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+            <span class="badge absolute left-3 top-3 bg-ink-900 text-white">Bestseller</span>
+            <button type="button" class="wishlist-btn absolute right-3 top-3 grid size-10 place-items-center rounded-full bg-white/90 text-ink-700 shadow-sm transition hover:text-red-500" data-id="aurora-ring" aria-pressed="false" aria-label="Add Aurora Solitaire Ring to wishlist">{{icon:heart size-5}}</button>
+          </div>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-widest text-ink-400">Rings &middot; White gold</p>
+            <h3 class="mt-1 text-lg">Aurora Solitaire Ring</h3>
+            <div class="mt-2 flex items-center gap-0.5 text-gold-500" role="img" aria-label="Rated 5 out of 5 stars">{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}<span class="ml-1.5 text-xs text-ink-500">(214)</span></div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <p class="font-semibold text-ink-900">Rs. 148,000</p>
+              <button type="button" class="btn btn-dark !px-4 !py-2 !text-xs" data-add-to-cart data-id="aurora-ring" data-name="Aurora Solitaire Ring" data-price="148000" data-img="assets/images/ring-teal.jpg">Add to bag</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card card group overflow-hidden" data-category="bracelets">
+          <div class="relative aspect-[4/5] overflow-hidden bg-sand">
+            <img src="assets/images/bracelet-white.jpg" alt="22 karat gold rope chain bracelet" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+            <span class="badge absolute left-3 top-3 bg-gold-700 text-white">New</span>
+            <button type="button" class="wishlist-btn absolute right-3 top-3 grid size-10 place-items-center rounded-full bg-white/90 text-ink-700 shadow-sm transition hover:text-red-500" data-id="rope-bracelet" aria-pressed="false" aria-label="Add Rope Chain Bracelet to wishlist">{{icon:heart size-5}}</button>
+          </div>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-widest text-ink-400">Bracelets &middot; 22K gold</p>
+            <h3 class="mt-1 text-lg">Rope Chain Bracelet</h3>
+            <div class="mt-2 flex items-center gap-0.5 text-gold-500" role="img" aria-label="Rated 5 out of 5 stars">{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}<span class="ml-1.5 text-xs text-ink-500">(86)</span></div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <p class="font-semibold text-ink-900">Rs. 96,500</p>
+              <button type="button" class="btn btn-dark !px-4 !py-2 !text-xs" data-add-to-cart data-id="rope-bracelet" data-name="Rope Chain Bracelet" data-price="96500" data-img="assets/images/bracelet-white.jpg">Add to bag</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card card group overflow-hidden" data-category="earrings">
+          <div class="relative aspect-[4/5] overflow-hidden bg-sand">
+            <img src="assets/images/earrings-white-box.jpg" alt="Pair of pearl earrings resting on a white box" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+            <button type="button" class="wishlist-btn absolute right-3 top-3 grid size-10 place-items-center rounded-full bg-white/90 text-ink-700 shadow-sm transition hover:text-red-500" data-id="perle-earrings" aria-pressed="false" aria-label="Add Perle Drop Earrings to wishlist">{{icon:heart size-5}}</button>
+          </div>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-widest text-ink-400">Earrings &middot; Freshwater pearl</p>
+            <h3 class="mt-1 text-lg">Perle Drop Earrings</h3>
+            <div class="mt-2 flex items-center gap-0.5 text-gold-500" role="img" aria-label="Rated 4.8 out of 5 stars">{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}<span class="ml-1.5 text-xs text-ink-500">(142)</span></div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <p class="font-semibold text-ink-900">Rs. 38,000</p>
+              <button type="button" class="btn btn-dark !px-4 !py-2 !text-xs" data-add-to-cart data-id="perle-earrings" data-name="Perle Drop Earrings" data-price="38000" data-img="assets/images/earrings-white-box.jpg">Add to bag</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card card group overflow-hidden" data-category="necklaces">
+          <div class="relative aspect-[4/5] overflow-hidden bg-sand">
+            <img src="assets/images/jewelry-set-green.jpg" alt="Blush clover necklace, earrings, bangle and ring set" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+            <span class="badge absolute left-3 top-3 bg-red-600 text-white">-12%</span>
+            <button type="button" class="wishlist-btn absolute right-3 top-3 grid size-10 place-items-center rounded-full bg-white/90 text-ink-700 shadow-sm transition hover:text-red-500" data-id="clover-set" aria-pressed="false" aria-label="Add Blush Clover Set to wishlist">{{icon:heart size-5}}</button>
+          </div>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-widest text-ink-400">Sets &middot; Gold &amp; enamel</p>
+            <h3 class="mt-1 text-lg">Blush Clover Set</h3>
+            <div class="mt-2 flex items-center gap-0.5 text-gold-500" role="img" aria-label="Rated 4.9 out of 5 stars">{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}<span class="ml-1.5 text-xs text-ink-500">(97)</span></div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <p class="font-semibold text-ink-900">Rs. 124,000 <span class="ml-1 text-xs font-normal text-ink-400 line-through">Rs. 141,000</span></p>
+              <button type="button" class="btn btn-dark !px-4 !py-2 !text-xs" data-add-to-cart data-id="clover-set" data-name="Blush Clover Set" data-price="124000" data-img="assets/images/jewelry-set-green.jpg">Add to bag</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card card group overflow-hidden" data-category="bracelets">
+          <div class="relative aspect-[4/5] overflow-hidden bg-sand">
+            <img src="assets/images/bracelet-pearl.jpg" alt="Gold and pearl bracelet" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+            <button type="button" class="wishlist-btn absolute right-3 top-3 grid size-10 place-items-center rounded-full bg-white/90 text-ink-700 shadow-sm transition hover:text-red-500" data-id="pearl-bracelet" aria-pressed="false" aria-label="Add Pearl and Gold Bracelet to wishlist">{{icon:heart size-5}}</button>
+          </div>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-widest text-ink-400">Bracelets &middot; Pearl &amp; gold</p>
+            <h3 class="mt-1 text-lg">Pearl &amp; Gold Bracelet</h3>
+            <div class="mt-2 flex items-center gap-0.5 text-gold-500" role="img" aria-label="Rated 4.7 out of 5 stars">{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}<span class="ml-1.5 text-xs text-ink-500">(63)</span></div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <p class="font-semibold text-ink-900">Rs. 52,500</p>
+              <button type="button" class="btn btn-dark !px-4 !py-2 !text-xs" data-add-to-cart data-id="pearl-bracelet" data-name="Pearl &amp; Gold Bracelet" data-price="52500" data-img="assets/images/bracelet-pearl.jpg">Add to bag</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card card group overflow-hidden" data-category="rings">
+          <div class="relative aspect-[4/5] overflow-hidden bg-sand">
+            <img src="assets/images/ring-flowers.jpg" alt="Rose bloom diamond ring in an open ring box" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+            <span class="badge absolute left-3 top-3 bg-ink-900 text-white">Bridal</span>
+            <button type="button" class="wishlist-btn absolute right-3 top-3 grid size-10 place-items-center rounded-full bg-white/90 text-ink-700 shadow-sm transition hover:text-red-500" data-id="rose-ring" aria-pressed="false" aria-label="Add Rose Bloom Ring to wishlist">{{icon:heart size-5}}</button>
+          </div>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-widest text-ink-400">Rings &middot; Rose gold</p>
+            <h3 class="mt-1 text-lg">Rose Bloom Ring</h3>
+            <div class="mt-2 flex items-center gap-0.5 text-gold-500" role="img" aria-label="Rated 5 out of 5 stars">{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}<span class="ml-1.5 text-xs text-ink-500">(171)</span></div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <p class="font-semibold text-ink-900">Rs. 186,000</p>
+              <button type="button" class="btn btn-dark !px-4 !py-2 !text-xs" data-add-to-cart data-id="rose-ring" data-name="Rose Bloom Ring" data-price="186000" data-img="assets/images/ring-flowers.jpg">Add to bag</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card card group overflow-hidden" data-category="necklaces">
+          <div class="relative aspect-[4/5] overflow-hidden bg-sand">
+            <img src="assets/images/necklace-pastel.jpg" alt="Delicate gold necklace and hoop earrings on a pastel background" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+            <button type="button" class="wishlist-btn absolute right-3 top-3 grid size-10 place-items-center rounded-full bg-white/90 text-ink-700 shadow-sm transition hover:text-red-500" data-id="petal-necklace" aria-pressed="false" aria-label="Add Petal Chain Necklace to wishlist">{{icon:heart size-5}}</button>
+          </div>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-widest text-ink-400">Necklaces &middot; 18K gold</p>
+            <h3 class="mt-1 text-lg">Petal Chain Necklace</h3>
+            <div class="mt-2 flex items-center gap-0.5 text-gold-500" role="img" aria-label="Rated 4.8 out of 5 stars">{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}<span class="ml-1.5 text-xs text-ink-500">(118)</span></div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <p class="font-semibold text-ink-900">Rs. 74,000</p>
+              <button type="button" class="btn btn-dark !px-4 !py-2 !text-xs" data-add-to-cart data-id="petal-necklace" data-name="Petal Chain Necklace" data-price="74000" data-img="assets/images/necklace-pastel.jpg">Add to bag</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card card group overflow-hidden" data-category="earrings">
+          <div class="relative aspect-[4/5] overflow-hidden bg-sand">
+            <img src="assets/images/earrings-shell.jpg" alt="Gold pearl ear cuff beside a seashell" class="size-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+            <span class="badge absolute left-3 top-3 bg-gold-700 text-white">New</span>
+            <button type="button" class="wishlist-btn absolute right-3 top-3 grid size-10 place-items-center rounded-full bg-white/90 text-ink-700 shadow-sm transition hover:text-red-500" data-id="pearl-cuff" aria-pressed="false" aria-label="Add Lumi&egrave;re Pearl Ear Cuff to wishlist">{{icon:heart size-5}}</button>
+          </div>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-widest text-ink-400">Earrings &middot; 14K gold</p>
+            <h3 class="mt-1 text-lg">Lumi&egrave;re Pearl Ear Cuff</h3>
+            <div class="mt-2 flex items-center gap-0.5 text-gold-500" role="img" aria-label="Rated 4.9 out of 5 stars">{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}{{icon:star size-4}}<span class="ml-1.5 text-xs text-ink-500">(54)</span></div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <p class="font-semibold text-ink-900">Rs. 29,500</p>
+              <button type="button" class="btn btn-dark !px-4 !py-2 !text-xs" data-add-to-cart data-id="pearl-cuff" data-name="Lumi&egrave;re Pearl Ear Cuff" data-price="29500" data-img="assets/images/earrings-shell.jpg">Add to bag</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p id="product-empty" class="mt-10 hidden text-center text-ink-500">No pieces in this category yet &mdash; check back soon.</p>
+    </div>
+  </section>
+
+  <!-- Bridal feature -->
+  <section class="section bg-sand" aria-labelledby="bridal-title">
+    <div class="container-x grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <div class="reveal relative">
+        <img src="assets/images/jewelry-set-green-2.jpg" alt="Gold bridal jewellery set displayed on velvet stands" class="aspect-[5/6] w-full rounded-[2rem] object-cover shadow-soft" loading="lazy">
+        <div class="absolute -bottom-6 right-4 max-w-[15rem] rounded-2xl bg-ink-950 p-5 text-white shadow-soft sm:-right-6">
+          <p class="eyebrow !text-gold-300">Limited offer</p>
+          <p class="mt-1 font-serif text-3xl">15% off</p>
+          <p class="mt-1 text-sm text-ink-300">on complete bridal sets this wedding season.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">The bridal edit</p>
+        <h2 id="bridal-title" class="section-title mt-3">Crafted for the most important day</h2>
+        <p class="section-lead">Our bridal consultants help you build a matching set &mdash; necklace, earrings, tikka and bangles &mdash; tailored to your outfit, budget and timeline.</p>
+        <ul class="mt-8 space-y-4">
+          <li class="flex items-start gap-3"><span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-gold-500 text-white">{{icon:check size-3.5}}</span><span>Complimentary one-to-one styling session in our showroom</span></li>
+          <li class="flex items-start gap-3"><span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-gold-500 text-white">{{icon:check size-3.5}}</span><span>Custom engraving and resizing included with every ring</span></li>
+          <li class="flex items-start gap-3"><span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-gold-500 text-white">{{icon:check size-3.5}}</span><span>Secure, insured storage until your wedding week</span></li>
+        </ul>
+        <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+          <a href="contact.html" class="btn btn-dark">Book a consultation</a>
+          <a href="about.html" class="btn btn-outline">Our craftsmanship</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="section" aria-labelledby="why-title">
+    <div class="container-x">
+      <div class="reveal mx-auto max-w-2xl text-center">
+        <p class="eyebrow">Why Aurelia</p>
+        <h2 id="why-title" class="section-title mt-3">Luxury you can trust, service you will love</h2>
+      </div>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="reveal card p-7 transition hover:-translate-y-1">
+          <span class="grid size-12 place-items-center rounded-2xl bg-gold-50 text-gold-600">{{icon:gem size-6}}</span>
+          <h3 class="mt-5 text-xl">Ethically sourced</h3>
+          <p class="mt-2 text-sm leading-relaxed text-ink-600">Conflict-free diamonds and recycled gold from vetted, traceable partners.</p>
+        </div>
+        <div class="reveal card p-7 transition hover:-translate-y-1">
+          <span class="grid size-12 place-items-center rounded-2xl bg-gold-50 text-gold-600">{{icon:sparkles size-6}}</span>
+          <h3 class="mt-5 text-xl">Made by hand</h3>
+          <p class="mt-2 text-sm leading-relaxed text-ink-600">Every piece is cast, set and polished by artisans with decades of experience.</p>
+        </div>
+        <div class="reveal card p-7 transition hover:-translate-y-1">
+          <span class="grid size-12 place-items-center rounded-2xl bg-gold-50 text-gold-600">{{icon:gift size-6}}</span>
+          <h3 class="mt-5 text-xl">Gift-ready</h3>
+          <p class="mt-2 text-sm leading-relaxed text-ink-600">Signature velvet box, care card and handwritten note &mdash; at no extra cost.</p>
+        </div>
+        <div class="reveal card p-7 transition hover:-translate-y-1">
+          <span class="grid size-12 place-items-center rounded-2xl bg-gold-50 text-gold-600">{{icon:chat size-6}}</span>
+          <h3 class="mt-5 text-xl">Lifetime care</h3>
+          <p class="mt-2 text-sm leading-relaxed text-ink-600">Free cleaning, polishing and size adjustments for as long as you own it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section bg-ink-950" aria-labelledby="reviews-title">
+    <div class="container-x">
+      <div class="reveal mx-auto max-w-2xl text-center">
+        <p class="eyebrow !text-gold-300">Client stories</p>
+        <h2 id="reviews-title" class="section-title mt-3 !text-white">Loved by thousands of families</h2>
+      </div>
+      <div class="mt-12 grid gap-6 lg:grid-cols-3">
+        <figure class="reveal rounded-3xl border border-white/10 bg-white/5 p-8">
+          <div class="flex gap-0.5 text-gold-400" role="img" aria-label="Rated 5 out of 5 stars">{{icon:star size-5}}{{icon:star size-5}}{{icon:star size-5}}{{icon:star size-5}}{{icon:star size-5}}</div>
+          <blockquote class="mt-5 text-base leading-relaxed text-ink-200">&ldquo;The team guided us through every detail of my bridal set. The finish is flawless and it arrived beautifully packaged days before the nikkah.&rdquo;</blockquote>
+          <figcaption class="mt-6 flex items-center gap-3">
+            <span class="grid size-11 place-items-center rounded-full bg-gold-500 font-semibold text-ink-950">AK</span>
+            <span><span class="block font-semibold text-white">Ayesha Khan</span><span class="text-sm text-ink-400">Lahore &middot; Bridal set</span></span>
+          </figcaption>
+        </figure>
+        <figure class="reveal rounded-3xl border border-white/10 bg-white/5 p-8">
+          <div class="flex gap-0.5 text-gold-400" role="img" aria-label="Rated 5 out of 5 stars">{{icon:star size-5}}{{icon:star size-5}}{{icon:star size-5}}{{icon:star size-5}}{{icon:star size-5}}</div>
+          <blockquote class="mt-5 text-base leading-relaxed text-ink-200">&ldquo;I proposed with the Aurora solitaire and the sparkle is unreal. The certificate, the engraving, the service &mdash; everything felt truly premium.&rdquo;</blockquote>
+          <figcaption class="mt-6 flex items-center gap-3">
+            <span class="grid size-11 place-items-center rounded-full bg-gold-500 font-semibold text-ink-950">HR</span>
+            <span><span class="block font-semibold text-white">Hamza Raza</span><span class="text-sm text-ink-400">Islamabad &middot; Engagement ring</span></span>
+          </figcaption>
+        </figure>
+        <figure class="reveal rounded-3xl border border-white/10 bg-white/5 p-8">
+          <div class="flex gap-0.5 text-gold-400" role="img" aria-label="Rated 5 out of 5 stars">{{icon:star size-5}}{{icon:star size-5}}{{icon:star size-5}}{{icon:star size-5}}{{icon:star size-5}}</div>
+          <blockquote class="mt-5 text-base leading-relaxed text-ink-200">&ldquo;Ordered pearl earrings for my mother&rsquo;s birthday. The gift box and handwritten note made her cry happy tears. We will be back for sure.&rdquo;</blockquote>
+          <figcaption class="mt-6 flex items-center gap-3">
+            <span class="grid size-11 place-items-center rounded-full bg-gold-500 font-semibold text-ink-950">SM</span>
+            <span><span class="block font-semibold text-white">Sana Malik</span><span class="text-sm text-ink-400">Karachi &middot; Pearl earrings</span></span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section" aria-labelledby="newsletter-title">
+    <div class="container-x">
+      <div class="reveal relative overflow-hidden rounded-[2rem] bg-gold-50 px-6 py-14 text-center sm:px-12">
+        <div class="pointer-events-none absolute -right-16 -top-16 size-56 rounded-full bg-gold-200/60 blur-2xl" aria-hidden="true"></div>
+        <span class="relative mx-auto grid size-14 place-items-center rounded-full bg-gold-500 text-white">{{icon:mail size-6}}</span>
+        <h2 id="newsletter-title" class="section-title relative mt-5">Be first to see new collections</h2>
+        <p class="section-lead relative mx-auto max-w-xl">Join our private list for early access, styling notes and an exclusive welcome gift on your first order.</p>
+
+        <form class="relative mx-auto mt-8 max-w-xl" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-ajax-form novalidate>
+          <input type="hidden" name="_subject" value="Aurelia Jewels newsletter signup">
+          <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <div class="flex-1 text-left">
+              <label for="newsletter-email" class="sr-only">Email address</label>
+              <input id="newsletter-email" type="email" name="email" class="field !rounded-full !px-5 !py-3.5" placeholder="you@example.com" autocomplete="email" required>
+              <p class="field-error hidden" data-error-for="email"></p>
+            </div>
+            <button type="submit" class="btn btn-dark" data-submit-label="Subscribe">Subscribe</button>
+          </div>
+          <div class="form-status mt-4 hidden rounded-xl px-4 py-3 text-left text-sm" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>

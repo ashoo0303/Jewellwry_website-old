@@ -1,0 +1,33 @@
+<div id="cart-overlay" class="fixed inset-0 z-[60] hidden bg-ink-950/60 backdrop-blur-sm" aria-hidden="true"></div>
+
+<aside id="cart-drawer" class="fixed right-0 top-0 z-[70] flex h-full w-full max-w-md translate-x-full flex-col bg-ivory shadow-2xl transition-transform duration-300 ease-out" aria-label="Shopping bag" aria-hidden="true" tabindex="-1">
+  <div class="flex items-center justify-between border-b border-ink-100 px-6 py-5">
+    <h2 class="font-serif text-2xl text-ink-900">Your bag</h2>
+    <button type="button" id="cart-close" class="grid size-10 place-items-center rounded-full text-ink-600 transition hover:bg-ink-100" aria-label="Close shopping bag">{{icon:x size-5}}</button>
+  </div>
+
+  <div id="cart-empty" class="flex flex-1 flex-col items-center justify-center gap-4 px-8 text-center">
+    <span class="grid size-16 place-items-center rounded-full bg-gold-50 text-gold-600">{{icon:bag size-8}}</span>
+    <p class="font-serif text-xl text-ink-900">Your bag is empty</p>
+    <p class="text-sm text-ink-500">Discover handcrafted pieces and add your favourites here.</p>
+    <a href="index.html#bestsellers" class="btn btn-dark" data-cart-close>Browse bestsellers</a>
+  </div>
+
+  <ul id="cart-items" class="hidden flex-1 space-y-4 overflow-y-auto px-6 py-5"></ul>
+
+  <div id="cart-footer" class="hidden border-t border-ink-100 bg-white px-6 py-5">
+    <div class="flex items-center justify-between text-sm text-ink-600">
+      <span>Subtotal</span>
+      <strong id="cart-total" class="text-lg font-semibold text-ink-900">Rs. 0</strong>
+    </div>
+    <p class="mt-1 text-xs text-ink-500">Insured delivery is free above Rs. 50,000. Orders are confirmed with our concierge.</p>
+    <a href="contact.html?order=1#contact-form" class="btn btn-gold mt-4 w-full">Request this order {{icon:arrow-right size-4}}</a>
+    <button type="button" id="cart-clear" class="mt-2 w-full text-center text-xs font-medium text-ink-500 underline-offset-2 hover:text-ink-900 hover:underline">Clear bag</button>
+  </div>
+</aside>
+
+<div id="toast-region" class="pointer-events-none fixed inset-x-0 bottom-4 z-[90] flex flex-col items-center gap-2 px-4" aria-live="polite" role="status"></div>
+
+<button type="button" id="back-to-top" class="fixed bottom-5 right-5 z-40 grid size-12 translate-y-4 place-items-center rounded-full bg-ink-900 text-white opacity-0 shadow-soft transition hover:bg-gold-600" aria-label="Back to top" tabindex="-1">
+  {{icon:arrow-up size-5}}
+</button>
