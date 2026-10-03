@@ -23,7 +23,6 @@
       try {
         window.localStorage.setItem(key, JSON.stringify(value));
       } catch {
-        /* storage may be unavailable (private mode); the UI still works for the session */
       }
     },
   };
@@ -63,7 +62,6 @@
     }, 2800);
   }
 
-  /* ---------- Navigation ---------- */
   function initNavigation() {
     const header = $("#site-header");
     const toggle = $("#menu-toggle");
@@ -94,7 +92,6 @@
     });
   }
 
-  /* ---------- Shopping bag ---------- */
   function initCart() {
     const drawer = $("#cart-drawer");
     const overlay = $("#cart-overlay");
@@ -261,7 +258,6 @@
     render();
   }
 
-  /* ---------- Wishlist ---------- */
   function initWishlist() {
     const buttons = $$(".wishlist-btn");
     if (!buttons.length) return;
@@ -287,7 +283,6 @@
     });
   }
 
-  /* ---------- Product filter ---------- */
   function initProductFilter() {
     const tabs = $$("#product-tabs [data-filter]");
     const cards = $$(".product-card");
@@ -311,7 +306,6 @@
     );
   }
 
-  /* ---------- Scroll effects ---------- */
   function initReveal() {
     const targets = $$(".reveal");
     if (!targets.length) return;
@@ -380,7 +374,6 @@
     );
   }
 
-  /* ---------- Forms ---------- */
   function fieldMessage(field) {
     const { validity } = field;
     if (validity.customError) return field.validationMessage;

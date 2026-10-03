@@ -11,15 +11,20 @@ const NAV_KEYS = ["home", "about", "contact", "signin", "signup"];
 const read = (file) => readFile(file, "utf8");
 
 function parseMeta(source) {
-  const meta = {};
-  let body = source;
-  const header = /^<!--\s*(\w+):\s*([\s\S]*?)\s*-->\s*/;
-  let match;
-  while ((match = header.exec(body))) {
-    meta[match[1]] = match[2].trim();
-    body = body.slice(match[0].length);
-  }
-  return { meta, body };
+  const open = source.match(/<main\b([^>]*)>/i);
+  const attrs = open?.[1] ?? "";
+  const readAttr = (name) => {
+    const match = attrs.match(new RegExp(`data-${name}="([^"]*)"`));
+    return match ? match[1].replaceAll("&quot;", '"').replaceAll("&amp;", "&").trim() : "";
+  };
+  return {
+    meta: {
+      title: readAttr("title"),
+      description: readAttr("description"),
+      active: readAttr("active"),
+    },
+    body: source,
+  };
 }
 
 function expandIcons(html) {
@@ -55,7 +60,7 @@ async function main() {
   for (const file of files) {
     const { meta, body } = parseMeta(await read(path.join(pagesDir, file)));
     if (!meta.title || !meta.description) {
-      throw new Error(`${file}: missing "title" or "description" header comment`);
+      throw new Error(`${file}: missing data-title or data-description on <main>`);
     }
 
     const page = [
