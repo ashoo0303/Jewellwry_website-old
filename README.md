@@ -43,14 +43,7 @@ While editing: `npm run watch:css` recompiles Tailwind on change; run `npm run b
 
 ## Contact form setup (required)
 
-The contact form (and the newsletter form on the home page) post to [Formspree](https://formspree.io):
-
-1. Create a free account and a new form at formspree.io.
-2. Copy your form ID (the part after `/f/` in the endpoint URL).
-3. Replace `YOUR_FORM_ID` in the `action` attribute of the forms in `src/pages/contact.html` and `src/pages/index.html`.
-4. Run `npm run build:pages`.
-
-Until the ID is replaced, submitting the form shows a clear "not connected" message instead of silently failing. The form also works without JavaScript through a normal HTML POST.
+The contact form and home-page newsletter post to [Formspree](https://formspree.io) at `https://formspree.io/f/xyezrlrq`. Submissions are sent with `fetch` (JSON) from `assets/js/main.js`; without JavaScript the same forms still POST normally.
 
 ## Notes
 
